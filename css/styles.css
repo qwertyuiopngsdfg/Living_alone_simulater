@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #006c61;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px;
+    background: #3cb371;
+    font-weight: bold;
+}
+
+main {
+    margin: 0 auto;
+}
