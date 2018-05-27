@@ -5,6 +5,20 @@ body {
     color: #fff;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: solid 1px #006c61;
+    margin: 10px 30px;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -14,6 +28,50 @@ a {
     font-weight: bold;
 }
 
+p {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #303030;
+}
+
+input {
+    width: 150px;
+}
+
 main {
+    margin: 20px 0;
+    padding: 20px;
+    border: solid 1px;
+    background: #fff;
+    text-align: left;
+}
+
+section {
+    margin: 20px;
+    background: #f1f1f1;
+    padding: 15px;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+.container {
     margin: 0 auto;
+    color: #000;
+    border: solid 1px #006c61;
+    font-size: 20px;
+    padding: 20px;
+    width: 70%;
+}
+
+.value {
+    float: right;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.example {
+    font-size: 12px;
 }
