@@ -16,7 +16,7 @@
             <p>生活するうえである最低限必須だと思われる物です、人によっては既に持っている物やほかにも必要な物があると思うので、参考にしてください。</p>
             <dl>
                 <section id="section1">
-                    <dt>家賃(管理費・駐車場など含む)<span class="value">= {{ totalCost1 }}</span></dt>
+                    <dt>家賃(管理費・駐車場など含む)<span class="value">= {{ totalCost }}</span></dt>
                     <dd>
                         <ul>
                             <li>敷金<span class="value"><input v-model.number="cost1" type="number">円</span></li>
@@ -30,7 +30,7 @@
                     </dd>
                 </section>
                 <section id="section2">
-                    <dt>家電<span class="value">= {{ totalCost2 }}</span></dt>
+                    <dt>家電<span class="value">= {{ totalCost }}</span></dt>
                     <dd>
                         <ul>
                             <li>電子レンジ<span class="value"><input v-model.number="cost1" type="text">円</span></li>
@@ -44,7 +44,7 @@
                     </dd>
                 </section>
                 <section id="section3">
-                    <dt>家具<span class="value">= {{ totalCost3 }}</span></dt>
+                    <dt>家具<span class="value">= {{ totalCost }}</span></dt>
                     <dd>
                         <ul>
                             <li>寝具<span class="value"><input v-model.number="cost1" type="text">円</span></li>
@@ -56,7 +56,7 @@
                     </dd>
                 </section>
                 <section id="section4">
-                    <dt>生活用品<span class="value">= {{ totalCost4 }}</span></dt>
+                    <dt>生活用品<span class="value">= {{ totalCost }}</span></dt>
                     <dd>
                         <ul>
                             <li>生活用品<span class="example">・・・トイレットペーパー、ティッシュペーパー、ゴミ袋</span><span class="value"><input v-model.number="cost1" type="text">円</span></li>
@@ -69,7 +69,7 @@
                     </dd>
                 </section>
                 <section id="section5">
-                    <dt>引っ越し費用<span class="value">= {{ totalCost5 }}</span></dt>
+                    <dt>引っ越し費用<span class="value">= {{ totalCost }}</span></dt>
                     <dd>
                         <ul>
                             <li>引っ越し料金<span class="value"><input v-model.number="cost1" type="text">円</span></li>
@@ -78,6 +78,9 @@
                     </dd>
                 </section>
             </dl>
+            <div id="total">
+                <h2>合計= {{ total }}　円</h2>
+            </div>
         </div>
     </main>
     <footer>

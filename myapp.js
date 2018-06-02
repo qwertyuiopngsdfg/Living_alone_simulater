@@ -9,7 +9,7 @@ var sec1 = new Vue({
         cost6: 30000
     },
     computed: {
-        totalCost1: function() {
+        totalCost: function() {
                 return this.cost1 + this.cost2 + this.cost3 + this.cost4 + this.cost5 + this.cost6
         }
     }
@@ -27,7 +27,7 @@ var sec2 = new Vue({
         cost7: 0
     },
     computed: {
-        totalCost2: function() {
+        totalCost: function() {
                 return this.cost1 + this.cost2 + this.cost3 + this.cost4 + this.cost5 + this.cost6 
         }
     }
@@ -43,7 +43,7 @@ var sec3 = new Vue({
         cost5: 0
     },
     computed: {
-        totalCost3: function() {
+        totalCost: function() {
                 return this.cost1 + this.cost2 + this.cost3 + this.cost4 + this.cost5
         }
     }
@@ -54,13 +54,13 @@ var sec4 = new Vue({
     data: {
         cost1: 2000,
         cost2: 5000,
-        cost3: 500,
+        cost3: 1000,
         cost4: 3000,
         cost5: 2000,
         cost6: 0
     },
     computed: {
-        totalCost4: function() {
+        totalCost: function() {
                 return this.cost1 + this.cost2 + this.cost3 + this.cost4 + this.cost5 + this.cost6
         }
     }
@@ -73,8 +73,17 @@ var sec5 = new Vue({
         cost2: 1000
     },
     computed: {
-        totalCost5: function() {
+        totalCost: function() {
                 return this.cost1 + this.cost2
+        }
+    }
+})
+
+var total = new Vue({
+    el: '#total',
+    computed: {
+        total: function() {
+            return sec1.totalCost + sec2.totalCost + sec3.totalCost + sec4.totalCost + sec5.totalCost
         }
     }
 })
